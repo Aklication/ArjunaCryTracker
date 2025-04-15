@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #f0f4ff, #ffffff);
+  color: #1a1a1a;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  padding: 2rem 1rem;
+  max-width: 100%;
+  margin: 0 auto;
+  flex: 1;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.emoji-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(8px, 2vw, 16px);
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.emoji-grid img {
+  width: clamp(40px, 8vw, 60px);
+  height: clamp(40px, 8vw, 60px);
+}
+
+.counter-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  width: min(90%, 300px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.counter-box h2 {
+  font-size: 1.5rem;
+  color: #3e54d3;
+}
+
+.weekly {
+  color: #007d5b;
+  font-weight: bold;
+}
+
+#cryButton {
+  background-color: #3e54d3;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+#cryButton:hover {
+  background-color: #2e3fa0;
+}
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1rem;
+  gap: 1rem;
+}
+
+#weekSelector {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #3e54d3;
+  background-color: white;
+  color: #3e54d3;
+  cursor: pointer;
+}
+
+.details-link {
+  color: #3e54d3;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(1rem, 3vw, 2rem);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#cryChart {
+  width: 100%;
+  max-width: 800px;
+  height: min(60vh, 400px);
+  margin-bottom: 2rem;
+}
+
+#backButton {
+  background-color: transparent;
+  color: #3e54d3;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #3e54d3;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#backButton:hover {
+  background-color: #f0f4ff;
+}
