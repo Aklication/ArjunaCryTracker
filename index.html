@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Cry Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="top-bar">
+    <button id="backButton" style="display: none;">⬅ Back</button>
+    <select id="weekSelector" style="display: none;">
+      <option value="0">Current Week</option>
+      <option value="1">Last Week</option>
+      <option value="2">2 Weeks Ago</option>
+      <option value="3">3 Weeks Ago</option>
+    </select>
+    <span class="details-link" id="toggleView">📊 View Details</span>
+  </div>
+  
+  <div class="app-container" id="mainView">
+    <h1>Cry Tracker</h1>
+    <p class="subtitle">We measure how often Arjun cries</p>
+
+    <div class="emoji-grid">
+      <img src="https://img.icons8.com/emoji/96/baby-emoji.png" alt="baby" />
+      <img src="https://img.icons8.com/emoji/96/crying-face.png" alt="crying" />
+      <img src="https://img.icons8.com/emoji/96/crying-baby.png" alt="crying baby" />
+      <img src="https://img.icons8.com/emoji/96/loudly-crying-face.png" alt="loudly crying" />
+      <img src="https://img.icons8.com/emoji/96/baby-angel.png" alt="baby angel" />
+    </div>
+
+    <div class="counter-box">
+      <h2><span id="cryCount">0</span> times today</h2>
+      <p id="yesterdayCount">Yesterday he cried 0 times</p>
+      <p id="weekCount" class="weekly">0 times this week</p>
+    </div>
+
+    <button id="cryButton">CRIED NOW</button>
+  </div>
+
+  <div class="chart-container" id="chartView" style="display: none;">
+    <canvas id="cryChart"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
